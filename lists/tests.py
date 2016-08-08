@@ -14,3 +14,4 @@ class HomePageTest(TestCase):
         response = home_page(request)
         self.assertTrue(response.content.decode().startswith('<html>'))
         self.assertIn('<title>To-Do lists</title>', response.content.decode())
+        self.fail("finish test")
